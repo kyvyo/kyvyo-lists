@@ -1,0 +1,54 @@
+name: Update blocker lists
+
+on:
+  schedule:
+    - cron: "0 6 * * 1,4"
+  push:
+    branches: [main]
+    paths: ["lists/**"]
+  workflow_dispatch:
+
+concurrency:
+  group: update-lists
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: macos-15
+    timeout-minutes: 45
+    env:
+      LISTS_URL: https://lists.kyvyo.com/v1
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cache converter
+        uses: actions/cache@v4
+        with:
+          path: .tools
+          key: converter-${{ hashFiles('scripts/build-lists.sh') }}
+
+      - name: Build, validate and sign lists
+        env:
+          LISTS_SIGNING_KEY: ${{ secrets.LISTS_SIGNING_KEY }}
+        run: ./scripts/publish-lists.sh
+
+      - name: Check whether lists changed
+        id: changes
+        run: |
+          live="$(curl -fsSL "$LISTS_URL/manifest.json" || echo '{}')"
+          changed="$(python3 - dist/lists/v1/manifest.json "$live" <<'EOF'
+          import json, sys
+          new = json.load(open(sys.argv[1]))["lists"]
+          old = json.loads(sys.argv[2]).get("lists", {})
+          print("true" if {k: v["sha256"] for k, v in new.items()} != {k: v.get("sha256") for k, v in old.items()} else "false")
+          EOF
+          )"
+          echo "changed=$changed" >> "$GITHUB_OUTPUT"
+
+      - name: Deploy to Cloudflare Pages
+        if: steps.changes.outputs.changed == 'true'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist/lists --project-name=kyvyo-lists --branch=main

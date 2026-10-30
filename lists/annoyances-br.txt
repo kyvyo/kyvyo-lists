@@ -1,0 +1,16 @@
+! Title: Kyvyo Annoyances BR
+###credential_picker_container
+###credential_picker_iframe
+##iframe[src^="https://accounts.google.com/gsi/iframe/select"]
+folha.uol.com.br##.c-notification-link-app
+folha.uol.com.br##.c-top-signup-inner
+oglobo.globo.com##.mobiliarioNaoBarreira
+oglobo.globo.com##.block--advertising--is-fixed
+oglobo.globo.com##.mobiliarioFooter
+estadao.com.br##.house-ads-container
+gazetadopovo.com.br##div[class*="topBannerAd-module"]
+infomoney.com.br##section[data-ad-type]
+wikipedia.org###cbnnr
+eluniversal.com.mx##.dfp-tag-wrapper-container
+cnn.com##div#onetrust-consent-sdk
+##.myr-get-app-trigger
