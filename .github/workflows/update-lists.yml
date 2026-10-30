@@ -32,6 +32,24 @@ jobs:
           LISTS_SIGNING_KEY: ${{ secrets.LISTS_SIGNING_KEY }}
         run: ./scripts/publish-lists.sh
 
+      - name: Check test page baits
+        run: |
+          python3 - <<'EOF'
+          import json
+          baits = {"build/AdBlocker/blockerList.json": "#ad-slot", "build/AnnoyancesBlocker/blockerList.json": "#bar-cookie-consent"}
+          conditions = ("if-domain", "unless-domain", "if-top-url", "unless-top-url", "load-type", "resource-type")
+          for path, selector in baits.items():
+              rules = json.load(open(path))
+              found = any(
+                  rule["action"]["type"] == "css-display-none"
+                  and not any(key in rule["trigger"] for key in conditions)
+                  and selector in [part.strip() for part in rule["action"]["selector"].split(",")]
+                  for rule in rules
+              )
+              if not found:
+                  print(f"::warning::{selector} is no longer a generic rule in {path}; update the bait on kyvyo.com/test")
+          EOF
+
       - name: Check whether lists changed
         id: changes
         run: |
