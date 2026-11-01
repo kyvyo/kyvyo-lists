@@ -8,8 +8,9 @@ The app downloads the signed manifest, checks it with an Ed25519 public key and 
 
 | Path | Purpose |
 |---|---|
-| `lists/annoyances-br.txt` | Kyvyo's own rules: pop-ups and banners the community lists miss (mostly Brazilian and Mexican sites) and Google's AI Overview |
-| `scripts/build-lists.sh` | Downloads the source lists and compiles one `blockerList.json` per blocker |
+| `lists/annoyances-br.txt` | Kyvyo's own rules: pop-ups and banners the community lists miss (mostly Brazilian and Mexican sites) |
+| `lists/ai-overviews.txt` | Kyvyo's own rules that hide Google's AI Overview. Published as a separate list (`aiOverviews`) so the app can turn it off on its own |
+| `scripts/build-lists.sh` | Downloads the source lists and compiles one `blockerList.json` per blocker, plus `aiOverviews.json` for the Pop-up Blocker |
 | `scripts/check-google-ai.swift` | Opens Google searches as an iPhone and warns if the AI Overview is no longer hidden by Kyvyo's own rules (runs in the publishing workflow) |
 | `scripts/publish-lists.sh` | Builds, validates in WebKit, writes and signs `v1/manifest.json` |
 | `scripts/lists-tool.swift` | `keygen`, `sign` and `validate` |
@@ -20,7 +21,7 @@ The app downloads the signed manifest, checks it with an Ed25519 public key and 
 | Blocker | Lists |
 |---|---|
 | Ad Blocker | EasyList, EasyPrivacy, EasyList Portuguese, EasyList Spanish, EasyList Germany |
-| Pop-up Blocker | Fanboy's Annoyance List without the Fanboy Social rules, plus `lists/annoyances-br.txt` |
+| Pop-up Blocker | Fanboy's Annoyance List without the Fanboy Social rules, plus `lists/annoyances-br.txt`; `lists/ai-overviews.txt` is added on top while the app setting is on |
 
 Compiled with [SafariConverterLib](https://github.com/AdguardTeam/SafariConverterLib) (GPL-3.0), used only as a build tool. Each published build includes a `NOTICE.txt` with the source licenses.
 
@@ -43,4 +44,4 @@ Requires macOS with Xcode. The repository secrets are `LISTS_SIGNING_KEY`, `CLOU
 
 ## License
 
-Scripts and `lists/annoyances-br.txt`: MIT. The compiled lists keep the licenses of their sources.
+Scripts, `lists/annoyances-br.txt` and `lists/ai-overviews.txt`: MIT. The compiled lists keep the licenses of their sources.

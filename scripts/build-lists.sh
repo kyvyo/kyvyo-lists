@@ -20,8 +20,9 @@ SOURCES=(
 )
 
 BLOCKERS=(
-  "AdBlocker easylist easyprivacy easylistportuguese easylistspanish easylistgermany"
-  "AnnoyancesBlocker annoyances-without-social annoyances-br"
+  "AdBlocker/blockerList.json easylist easyprivacy easylistportuguese easylistspanish easylistgermany"
+  "AnnoyancesBlocker/blockerList.json annoyances-without-social annoyances-br"
+  "AnnoyancesBlocker/aiOverviews.json ai-overviews"
 )
 
 build_converter() {
@@ -75,19 +76,19 @@ EOF
 convert() {
   local target="$1" input advanced
   shift
-  mkdir -p "$OUTPUT_DIR/$target"
+  mkdir -p "$(dirname "$OUTPUT_DIR/$target")"
   input="$(mktemp)"
   advanced="$(mktemp)"
   for list in "$@"; do
     if [[ -f "$OWN_LISTS/$list.txt" ]]; then cat "$OWN_LISTS/$list.txt"; else cat "$DOWNLOADS/$list.txt"; fi >> "$input"
   done
   "$CONVERTER" convert -s "$SAFARI_VERSION" -a false --input-path "$input" \
-    --safari-rules-json-path "$OUTPUT_DIR/$target/blockerList.json" --advanced-blocking-rules-path "$advanced" >/dev/null
+    --safari-rules-json-path "$OUTPUT_DIR/$target" --advanced-blocking-rules-path "$advanced" >/dev/null
   rm -f "$input" "$advanced"
-  canonicalize "$OUTPUT_DIR/$target/blockerList.json"
+  canonicalize "$OUTPUT_DIR/$target"
   local count
-  count="$(python3 -c "import json,sys;print(len(json.load(open(sys.argv[1]))))" "$OUTPUT_DIR/$target/blockerList.json")"
-  echo "$target: $count rules ($(du -h "$OUTPUT_DIR/$target/blockerList.json" | cut -f1))"
+  count="$(python3 -c "import json,sys;print(len(json.load(open(sys.argv[1]))))" "$OUTPUT_DIR/$target")"
+  echo "$target: $count rules ($(du -h "$OUTPUT_DIR/$target" | cut -f1))"
 }
 
 build_converter
