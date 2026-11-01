@@ -5,7 +5,7 @@ on:
     - cron: "0 6 * * 1,4"
   push:
     branches: [main]
-    paths: ["lists/**"]
+    paths: ["lists/**", "scripts/**"]
   workflow_dispatch:
 
 concurrency:
@@ -49,6 +49,10 @@ jobs:
               if not found:
                   print(f"::warning::{selector} is no longer a generic rule in {path}; update the bait on kyvyo.com/test")
           EOF
+
+      - name: Check Google AI Overview rules
+        continue-on-error: true
+        run: swift scripts/check-google-ai.swift
 
       - name: Check whether lists changed
         id: changes

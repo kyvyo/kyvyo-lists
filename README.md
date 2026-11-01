@@ -8,8 +8,9 @@ The app downloads the signed manifest, checks it with an Ed25519 public key and 
 
 | Path | Purpose |
 |---|---|
-| `lists/annoyances-br.txt` | Kyvyo's own rules for pop-ups and banners on Brazilian and Mexican sites |
+| `lists/annoyances-br.txt` | Kyvyo's own rules: pop-ups and banners the community lists miss (mostly Brazilian and Mexican sites) and Google's AI Overview |
 | `scripts/build-lists.sh` | Downloads the source lists and compiles one `blockerList.json` per blocker |
+| `scripts/check-google-ai.swift` | Opens Google searches as an iPhone and warns if the AI Overview is no longer hidden by Kyvyo's own rules (runs in the publishing workflow) |
 | `scripts/publish-lists.sh` | Builds, validates in WebKit, writes and signs `v1/manifest.json` |
 | `scripts/lists-tool.swift` | `keygen`, `sign` and `validate` |
 | `.github/workflows/update-lists.yml` | Runs on Mondays and Thursdays at 06:00 UTC and deploys to Cloudflare Pages when a list changes |
