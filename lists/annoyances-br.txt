@@ -14,3 +14,5 @@ wikipedia.org###cbnnr
 eluniversal.com.mx##.dfp-tag-wrapper-container
 cnn.com##div#onetrust-consent-sdk
 ##.myr-get-app-trigger
+google.com,google.com.br,google.com.mx,google.de,google.at,google.ch,google.co.uk,google.ca,google.com.au,google.co.nz,google.ie,google.es,google.pt,google.com.ar,google.cl,google.com.co,google.com.pe,google.fr,google.it,google.nl,google.be####eKIzJc
+google.com,google.com.br,google.com.mx,google.de,google.at,google.ch,google.co.uk,google.ca,google.com.au,google.co.nz,google.ie,google.es,google.pt,google.com.ar,google.cl,google.com.co,google.com.pe,google.fr,google.it,google.nl,google.be##div[jsname="dEwkXc"]
