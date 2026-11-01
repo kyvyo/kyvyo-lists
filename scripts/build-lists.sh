@@ -14,12 +14,13 @@ SOURCES=(
   "easyprivacy https://easylist.to/easylist/easyprivacy.txt"
   "easylistportuguese https://easylist-downloads.adblockplus.org/easylistportuguese.txt"
   "easylistspanish https://easylist-downloads.adblockplus.org/easylistspanish.txt"
+  "easylistgermany https://easylist.to/easylistgermany/easylistgermany.txt"
   "annoyances https://secure.fanboy.co.nz/fanboy-annoyance.txt"
   "social https://easylist.to/easylist/fanboy-social.txt"
 )
 
 BLOCKERS=(
-  "AdBlocker easylist easyprivacy easylistportuguese easylistspanish"
+  "AdBlocker easylist easyprivacy easylistportuguese easylistspanish easylistgermany"
   "AnnoyancesBlocker annoyances-without-social annoyances-br"
 )
 

@@ -50,6 +50,7 @@ Sources and licenses:
 - EasyList and EasyPrivacy (https://easylist.to) - CC BY-SA 3.0 or GPL-3.0
 - EasyList Portuguese (https://easylist-downloads.adblockplus.org/easylistportuguese.txt) - see its header
 - EasyList Spanish (https://easylist-downloads.adblockplus.org/easylistspanish.txt) - see its header
+- EasyList Germany (https://easylist.to/easylistgermany/easylistgermany.txt) - GPL-3.0 or CC BY-SA 3.0
 - Fanboy's Annoyance List without social rules (https://secure.fanboy.co.nz) - CC BY 3.0
 - Kyvyo's own rules (lists/annoyances-br.txt)
 

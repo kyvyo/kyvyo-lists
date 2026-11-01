@@ -18,7 +18,7 @@ The app downloads the signed manifest, checks it with an Ed25519 public key and 
 
 | Blocker | Lists |
 |---|---|
-| Ad Blocker | EasyList, EasyPrivacy, EasyList Portuguese, EasyList Spanish |
+| Ad Blocker | EasyList, EasyPrivacy, EasyList Portuguese, EasyList Spanish, EasyList Germany |
 | Pop-up Blocker | Fanboy's Annoyance List without the Fanboy Social rules, plus `lists/annoyances-br.txt` |
 
 Compiled with [SafariConverterLib](https://github.com/AdguardTeam/SafariConverterLib) (GPL-3.0), used only as a build tool. Each published build includes a `NOTICE.txt` with the source licenses.
