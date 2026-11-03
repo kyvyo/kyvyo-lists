@@ -54,12 +54,21 @@ canonicalize() {
 import json, sys
 path = sys.argv[1]
 rules = json.load(open(path))
+split = []
 for rule in rules:
     for key in ("if-domain", "unless-domain"):
         if key in rule["trigger"]:
             rule["trigger"][key] = sorted(rule["trigger"][key])
-    if "selector" in rule["action"]:
-        rule["action"]["selector"] = ", ".join(sorted(rule["action"]["selector"].split(", ")))
+    if "selector" not in rule["action"]:
+        split.append(rule)
+        continue
+    selectors = sorted(rule["action"]["selector"].split(", "))
+    relational = [selector for selector in selectors if ":has(" in selector]
+    plain = [selector for selector in selectors if ":has(" not in selector]
+    groups = ([plain] if plain else []) + [[selector] for selector in relational] if len(selectors) > 1 else [selectors]
+    for group in groups:
+        split.append({**rule, "action": {**rule["action"], "selector": ", ".join(group)}})
+rules = split
 key = lambda rule: json.dumps(rule, sort_keys=True)
 ordered, segment = [], []
 for rule in rules:

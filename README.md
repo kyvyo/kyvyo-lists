@@ -8,9 +8,9 @@ The app downloads the signed manifest, checks it with an Ed25519 public key and 
 
 | Path | Purpose |
 |---|---|
-| `lists/annoyances-br.txt` | Kyvyo's own rules: pop-ups and banners the community lists miss (mostly Brazilian and Mexican sites) |
+| `lists/annoyances-br.txt` | Kyvyo's own rules: pop-ups, banners and empty ad slots the community lists miss on the sites tested in Kyvyo's eight markets |
 | `lists/ai-overviews.txt` | Kyvyo's own rules that hide Google's AI Overview. Published as a separate list (`aiOverviews`) so the app can turn it off on its own |
-| `scripts/build-lists.sh` | Downloads the source lists and compiles one `blockerList.json` per blocker, plus `aiOverviews.json` for the Pop-up Blocker |
+| `scripts/build-lists.sh` | Downloads the source lists and compiles one `blockerList.json` per blocker, plus `aiOverviews.json` for the Pop-up Blocker. Each `:has()` selector gets a rule of its own, because Safari on iOS drops a whole selector list when one of them uses `:has()` |
 | `scripts/check-google-ai.swift` | Opens Google searches as an iPhone and warns if the AI Overview is no longer hidden by Kyvyo's own rules (runs in the publishing workflow) |
 | `scripts/publish-lists.sh` | Builds, validates in WebKit, writes and signs `v1/manifest.json` |
 | `scripts/lists-tool.swift` | `keygen`, `sign` and `validate` |
