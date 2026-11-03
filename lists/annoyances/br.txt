@@ -23,5 +23,6 @@ veja.abril.com.br##a.mobile-assine
 r7.com##header div.card-fixed.card-mt-nano
 moneytimes.com.br###agreement-cookies
 seudinheiro.com###agreement-cookies
+gazetaesportiva.com###cookie-law-info-bar
 seudinheiro.com###banner-fixed-mobile
 seudinheiro.com##header.header .widget_tituloheader
