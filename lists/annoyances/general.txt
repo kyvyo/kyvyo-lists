@@ -1,0 +1,8 @@
+! Title: Kyvyo Annoyances General (all markets)
+###credential_picker_container
+###credential_picker_iframe
+##iframe[src^="https://accounts.google.com/gsi/iframe/select"]
+wikipedia.org###cbnnr
+##.myr-get-app-trigger
+##body > div:has(> div > img[src*="/warning_amber_24dp.png"])
+###AdThrive_Footer_1_phone

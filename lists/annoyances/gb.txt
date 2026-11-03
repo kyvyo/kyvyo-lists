@@ -1,0 +1,13 @@
+! Title: Kyvyo Annoyances GB (United Kingdom)
+dailystar.co.uk,liverpoolecho.co.uk,dailyrecord.co.uk,birminghammail.co.uk,chroniclelive.co.uk,belfastlive.co.uk,bristolpost.co.uk,football.london,ok.co.uk##div[data-testid^="commercial-"][data-position]
+gbnews.com##div.ad-sticky-footer-mobile
+gbnews.com##div.ad-wrap
+skysports.com##div.ui-advert[data-role="advert-unit"]
+countrylife.co.uk###highline-leaderboard
+jamieoliver.com##div.ad-banner
+ucas.com##div.advert--tolarge-footer
+radiotimes.com##div:has(> iframe[src*="consent.radiotimes.com"])
+techradar.com###skinnyBanner
+spectator.com##div.subscribe-cta__bar
+hairybikers.com##div.cookie-notice
+gumtree.com###onetrust-consent-sdk

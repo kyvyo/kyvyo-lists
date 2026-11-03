@@ -1,0 +1,19 @@
+! Title: Kyvyo Annoyances ES (España)
+vogue.es##[class*="StickyHeroAdWrapper"]
+as.com##.oddsServeCreative
+fichajes.net##div.summary-ad
+bekia.es##.pub-box-text
+yorokobu.es##div.ad-wrapper-600
+muyinteresante.okdiario.com##div.banner.henneoHB-top
+muyinteresante.okdiario.com###mi-suscrip-popup-suscripciones-zinet
+muyinteresante.okdiario.com###mi-suscrip-sticky-bottom-suscripciones-zinet
+pequerecetas.com##.ad-contentbanner
+recetas.elperiodico.com##.publibypi
+eltiempo.es##.mods-box:has(> [id^="div-box-"])
+forobeta.com##div.fbAds-banner
+elperiodico.com,farodevigo.es,laopiniondemalaga.es,sport.es##nav.ft-mol-tapbar .ft-tooltip__content
+relevo.com##div.cookie-notice
+consumer.es###modal-revista-digital
+telva.com##.ue-c-banner
+kelisto.es###js-sticky-element
+infojobs.net###div-app-install-container

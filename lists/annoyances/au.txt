@@ -1,0 +1,18 @@
+! Title: Kyvyo Annoyances AU (Australia)
+nine.com.au##div:has(> div[id^="adspot-"])
+sbs.com.au###slot1-leaderboard-ad
+canberratimes.com.au,newcastleherald.com.au,illawarramercury.com.au,examiner.com.au,bendigoadvertiser.com.au,thecourier.com.au,bordermail.com.au##div:has(> div.relative > #sticky-footer-container)
+cricket.com.au##section.w-gam-advert
+mamamia.com.au##div:has(> div.ad-slot-wrapper)
+crn.com.au##div.mes-header-row--top-ad
+crn.com.au##div.mobile-ads
+concreteplayground.com##div.ad-banner
+thesaturdaypaper.com.au##div[data-ad-type="banner"]
+homestolove.com.au,gourmettraveller.com.au,marieclaire.com.au,womensweeklyfood.com.au,womensweekly.com.au,who.com.au##div.ad.mrec
+homestolove.com.au,gourmettraveller.com.au,marieclaire.com.au,womensweeklyfood.com.au,womensweekly.com.au,who.com.au##div.ad-billboard__wrapper
+realestate.com.au##div.leaderboard-slot
+sen.com.au###truskin-container > div.z-50.sticky
+pedestrian.tv##aside[class*="SurveyPopup-module"]
+au.rollingstone.com##aside.vinyl-survey
+broadsheet.com.au###registration_wall
+taste.com.au##div.nl-reg_wrapper-footer

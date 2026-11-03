@@ -1,0 +1,21 @@
+! Title: Kyvyo Annoyances CA (Canada)
+theglobeandmail.com###zephr-zone-footer
+thestar.com###tncms-region-page_sticky_anchor
+ledevoir.com##div.publicite-article-wrapper
+cp24.com##div.b-double-chain-custom:has(a[href="/app/"])
+cp24.com##div.b-double-chain-custom:has(a[href="/newsletters/"])
+lesoleil.com##div.cky-overlay
+lesoleil.com##div.cky-consent-container
+thehockeynews.com###appsflyer-banner-placeholder
+rds.ca##div.b-ads-custom
+mobilesyrup.com##div.article-teads
+mobilesyrup.com##div.ad-slot
+betakit.com###simple-banner
+narcity.com##div.mobile-lb-placeholder
+mtlblog.com##div.mobile-lb-placeholder
+5ingredients15minutes.com##div[class^="ads-wrapper__"]
+houseandhome.com##div[class^="ad ad--"]
+moneysense.ca##section.full-width-banner
+ratehub.ca###gpt-ad-leaderboard-mobilesticky
+ratehub.ca##div:has(> #gpt-ad-leaderboard-mobilesticky)
+autotrader.ca##div[class*="AdContentBanner_adContentBanner"]

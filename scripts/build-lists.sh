@@ -21,7 +21,7 @@ SOURCES=(
 
 BLOCKERS=(
   "AdBlocker/blockerList.json easylist easyprivacy easylistportuguese easylistspanish easylistgermany"
-  "AnnoyancesBlocker/blockerList.json annoyances-without-social annoyances-br"
+  "AnnoyancesBlocker/blockerList.json annoyances-without-social annoyances"
   "AnnoyancesBlocker/aiOverviews.json ai-overviews"
 )
 
@@ -89,7 +89,9 @@ convert() {
   input="$(mktemp)"
   advanced="$(mktemp)"
   for list in "$@"; do
-    if [[ -f "$OWN_LISTS/$list.txt" ]]; then cat "$OWN_LISTS/$list.txt"; else cat "$DOWNLOADS/$list.txt"; fi >> "$input"
+    if [[ -d "$OWN_LISTS/$list" ]]; then cat "$OWN_LISTS/$list"/*.txt
+    elif [[ -f "$OWN_LISTS/$list.txt" ]]; then cat "$OWN_LISTS/$list.txt"
+    else cat "$DOWNLOADS/$list.txt"; fi >> "$input"
   done
   "$CONVERTER" convert -s "$SAFARI_VERSION" -a false --input-path "$input" \
     --safari-rules-json-path "$OUTPUT_DIR/$target" --advanced-blocking-rules-path "$advanced" >/dev/null

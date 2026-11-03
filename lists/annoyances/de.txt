@@ -1,0 +1,17 @@
+! Title: Kyvyo Annoyances DE (Deutschland, Österreich, Schweiz)
+20min.ch##div[data-ad-unit-id^="/23178153471/"]
+merkur.de,fr.de,hna.de,tz.de,ruhr24.de##.id-TBeepSlot--content
+merkur.de,fr.de,hna.de,tz.de,ruhr24.de##.ogy-thumbnail
+merkur.de,fr.de,hna.de,tz.de,ruhr24.de##div[id$="-viralize-wide-wrapper"]
+merkur.de,fr.de,hna.de,tz.de,ruhr24.de##.trf-ad-bottom-sticky-container
+ruhr24.de##[id^="div-gpt-ad-yieldlove-sticky"]
+moviepilot.de##div:has(> #dfp-atf)
+moviepilot.de##div:has(> #dfp-mtf)
+moviepilot.de##div:has(> [id^="dfp-btf"])
+hoerzu.de##div.ad-pos1-wrapper
+bvb.de###mobile-sticky
+wetter.com###main > div[class*="styles_adSlot__"]
+chefkoch.de##spark-ad
+hardwareluxx.de###leaderboard:has(> .ad-container)
+emmikochteinfach.de##div[class*="holder-box"]
+netzwelt.de##prompticon3

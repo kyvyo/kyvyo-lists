@@ -1,0 +1,18 @@
+! Title: Kyvyo Annoyances US (United States)
+cnn.com##div#onetrust-consent-sdk
+abcnews.com##div.StickyAdWrapper
+newsweek.com##section[class*="_paywallDrawer"]
+tampabay.com##.html-advertisement
+bostonglobe.com##div.arc_ad
+sbnation.com##aside.duet--navigation--pmc-privacy-banner
+variety.com###pmc-atlasmg-adhesion-bar
+variety.com##div[id^="gpt-mobile-ros-top"]
+hollywoodreporter.com##div.header-ad-mobile
+hollywoodreporter.com##div.above-header-ad
+hollywoodreporter.com###inScreen
+deadline.com##div.above-header-ad
+deadline.com##div.header-ad-mobile
+rollingstone.com##div.above-header-ad
+mentalfloss.com###static-top-ad-placeholder_1
+kottke.org###boring-container
+food.com##div.ad:has(> div.ad__ad)

@@ -1,0 +1,27 @@
+! Title: Kyvyo Annoyances BR (Brasil)
+folha.uol.com.br##.c-notification-link-app
+folha.uol.com.br##.c-top-signup-inner
+oglobo.globo.com##.mobiliarioNaoBarreira
+oglobo.globo.com##.block--advertising--is-fixed
+oglobo.globo.com##.mobiliarioFooter
+estadao.com.br##.house-ads-container
+gazetadopovo.com.br##div[class*="topBannerAd-module"]
+infomoney.com.br##section[data-ad-type]
+cnnbrasil.com.br##section.header-ads-slot
+brasil247.com##div.ad-bed
+opovo.com.br##div.new_publicidade
+atarde.com.br##div.atr-ad
+uol.com.br##div.bannersticky-wrapper
+revistaquem.globo.com##section.block--advertising
+omelete.com.br##div.advertisement
+olhardigital.com.br##div.sn-ad-hba
+jovemnerd.com.br###background-ads
+pelando.com.br##div.ad-placement
+brasilescola.uol.com.br##div[class^="area-publicidade-"]
+tuasaude.com##div.top-mobile-ad-banner
+veja.abril.com.br##a.mobile-assine
+r7.com##header div.card-fixed.card-mt-nano
+moneytimes.com.br###agreement-cookies
+seudinheiro.com###agreement-cookies
+seudinheiro.com###banner-fixed-mobile
+seudinheiro.com##header.header .widget_tituloheader

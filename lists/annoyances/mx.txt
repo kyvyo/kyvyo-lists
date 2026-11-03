@@ -1,0 +1,24 @@
+! Title: Kyvyo Annoyances MX (México)
+eluniversal.com.mx##.dfp-tag-wrapper-container
+razon.com.mx##.snr-cookies-message
+publimetro.com.mx,fayerwayer.com###notification-modal
+jornada.com.mx##.col-main-ads
+informador.mx##div.alert.alert-social
+elimparcial.com##[id^="arcad-feature-"]
+debate.com.mx##.bannersaas
+mediotiempo.com###logoraRoot > [class*="_toaster_"]
+ovaciones.com##.ad-dfp-wrapper
+quien.com##.GoogleDfpAd
+quien.com##.BlocksPage-stickyAd
+sopitas.com##.radioPlayer
+chilango.com##.ChilangoPlayer
+dineroenimagen.com##.region-aperture
+vogue.mx,glamour.mx,gq.com.mx##[class*="StickyHeroAdWrapper"]
+cocinavital.mx,gourmetdemexico.com.mx##.stickyBanner
+cocinavital.mx##.allCookies
+directoalpaladar.com.mx##div.ad:has(> .ad-box)
+forbes.com.mx###mobile-sticky-footer
+rankia.mx###contenedor-fijo-ctas-mobile
+mercadolibre.com.mx##.download-app-banner-container
+claroshop.com##[class*="DownloadApp_barraUpdateApp"]
+occ.com.mx###smartBannerApp

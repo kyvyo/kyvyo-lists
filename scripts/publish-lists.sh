@@ -53,7 +53,7 @@ Sources and licenses:
 - EasyList Spanish (https://easylist-downloads.adblockplus.org/easylistspanish.txt) - see its header
 - EasyList Germany (https://easylist.to/easylistgermany/easylistgermany.txt) - GPL-3.0 or CC BY-SA 3.0
 - Fanboy's Annoyance List without social rules (https://secure.fanboy.co.nz) - CC BY 3.0
-- Kyvyo's own rules (lists/annoyances-br.txt and lists/ai-overviews.txt)
+- Kyvyo's own rules (lists/annoyances/*.txt and lists/ai-overviews.txt)
 
 Compiled with SafariConverterLib (https://github.com/AdguardTeam/SafariConverterLib), GPL-3.0, used as a build tool only.
 EOF
