@@ -20,7 +20,7 @@ SOURCES=(
 )
 
 BLOCKERS=(
-  "AdBlocker/blockerList.json easylist easyprivacy easylistportuguese easylistspanish easylistgermany"
+  "AdBlocker/blockerList.json easylist easyprivacy easylistportuguese easylistspanish easylistgermany ad-exceptions"
   "AnnoyancesBlocker/blockerList.json annoyances-without-social annoyances"
   "AnnoyancesBlocker/aiOverviews.json ai-overviews"
 )

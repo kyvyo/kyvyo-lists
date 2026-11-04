@@ -1,0 +1,2 @@
+! Title: Kyvyo Ad Blocker exceptions
+@@||static.folha.uol.com.br/paywall/js/*/publicidade.ads.js$script
