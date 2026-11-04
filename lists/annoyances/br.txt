@@ -26,3 +26,16 @@ seudinheiro.com###agreement-cookies
 gazetaesportiva.com###cookie-law-info-bar
 seudinheiro.com###banner-fixed-mobile
 seudinheiro.com##header.header .widget_tituloheader
+jovempan.com.br##div.fortytwo-ads-bg
+correio24horas.com.br##div.article_destaque
+correio24horas.com.br##div.article_intext
+correio24horas.com.br##div.article_mrec_destaque
+seudinheiro.com###banner-top
+seudinheiro.com##div.ad-inview
+seudinheiro.com##div.borderAD
+revistaquem.globo.com##div.tag-manager-publicidade-container
+brasil247.com##div.b247-inline-ad
+g1.globo.com##div.regua-de-cotacao-section__ad-card
+r7.com##div.stick-and-hide
+receitasnestle.com.br###hi-chat-widget-f5
+todamateria.com.br##div.lume-balloon

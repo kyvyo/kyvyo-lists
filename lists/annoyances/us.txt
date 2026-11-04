@@ -16,3 +16,5 @@ rollingstone.com##div.above-header-ad
 mentalfloss.com###static-top-ad-placeholder_1
 kottke.org###boring-container
 food.com##div.ad:has(> div.ad__ad)
+pinchofyum.com##div.adthrive_header_ad
+ajc.com##div.c-exp-bottomBanner

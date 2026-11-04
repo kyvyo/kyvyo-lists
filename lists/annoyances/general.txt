@@ -6,3 +6,5 @@ wikipedia.org###cbnnr
 ##.myr-get-app-trigger
 ##body > div:has(> div > img[src*="/warning_amber_24dp.png"])
 ###AdThrive_Footer_1_phone
+###AdThrive_Footer_1_desktop
+###AdThrive_Sidebar_1_desktop
